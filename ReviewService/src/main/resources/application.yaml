@@ -1,0 +1,15 @@
+server:
+  port: 7002
+  
+spring.cloud.stream:
+  defaultBinder: rabbit
+  default.contentType: application/json
+  bindings.messageProcessor-in-0:
+    destination: reviews
+    
+    
+spring.rabbitmq:
+   host: 127.0.0.1
+   port: 5672
+   username: Gaga
+   password: framework123-.

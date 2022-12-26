@@ -1,0 +1,23 @@
+server:
+  port: 7000
+  
+app:
+ product-service:
+   host: localhost
+   port: 7001
+ recommendation-service:
+   host: localhost
+   port: 7002
+ review-service:
+   host: localhost
+   port: 7003
+   
+   
+spring.cloud.stream:
+   bindings:
+      products-out-0:
+        destination: products
+      recommendations-out-0:
+        destination: recommendations
+      reviews-out-0:
+        destination: reviews
